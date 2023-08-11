@@ -36,4 +36,12 @@ function burn (address _address, uint _value) public{
        balances[_address] -= _value;
     }
   }
+  function transfer(address to, uint256 amount) public {
+        require(to != address(0), "Invalid address");
+        require(amount > 0, "Amount must be greater than 0");
+        require(balances[msg.sender] >= amount, "Insufficient balance");
+
+        balances[msg.sender] -= amount;
+        balances[to] += amount;
+    }
 }
