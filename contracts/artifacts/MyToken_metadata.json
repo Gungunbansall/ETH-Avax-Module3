@@ -1,10 +1,15 @@
 {
 	"compiler": {
-		"version": "0.8.18+commit.87f61d96"
+		"version": "0.8.9+commit.e5eed63a"
 	},
 	"language": "Solidity",
 	"output": {
 		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
 			{
 				"inputs": [
 					{
@@ -62,6 +67,19 @@
 			},
 			{
 				"inputs": [],
+				"name": "owner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
 				"name": "tokenAbbrv",
 				"outputs": [
 					{
@@ -98,6 +116,24 @@
 				],
 				"stateMutability": "view",
 				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "to",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "transfer",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
 			}
 		],
 		"devdoc": {
@@ -115,7 +151,7 @@
 		"compilationTarget": {
 			"contracts/mod3.sol": "MyToken"
 		},
-		"evmVersion": "paris",
+		"evmVersion": "london",
 		"libraries": {},
 		"metadata": {
 			"bytecodeHash": "ipfs"
@@ -128,11 +164,11 @@
 	},
 	"sources": {
 		"contracts/mod3.sol": {
-			"keccak256": "0xc6a9c364212815fc5a334383e6dfbd8787485fc5e474b9225ebfb0debc97293e",
-			"license": "UNLICENSED",
+			"keccak256": "0xfdecb43aa5fda7b9e69b425d86143f8c3d140e9a2c9dccbcee9d61ab6ff96305",
+			"license": "MIT",
 			"urls": [
-				"bzz-raw://0380016c0f662c818116e08284cf9390bec2a751907a84ff3f59a88d7f7db588",
-				"dweb:/ipfs/QmUwAHknm1Tr2RzBzjwxh5D8UcAyfWQA6WR6nue4ygX3hP"
+				"bzz-raw://15530b0bbb8ca73dffe549f3b1310d8d44a1c95dc133d612efe25ae760d866f8",
+				"dweb:/ipfs/QmVAzmUYZhNfi6sQhKgJPNzXSDRgTPC7e695iiya7SPsJn"
 			]
 		}
 	},

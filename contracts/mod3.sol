@@ -6,7 +6,7 @@ pragma solidity ^0.8.9;
 
 contract MyToken {
     // public variables here
-    string public tokenName = "Aish";
+    string public tokenName = "Metacrafters";
     string public tokenAbbrv = "Meta";
     uint public totalSupply = 0;
     
